@@ -1,0 +1,181 @@
+// .form-group {
+//     margin-bottom: 10px;
+// }
+
+// label {
+//     display: block;
+//     margin-bottom: 5px;
+// }
+
+input[type="text"],
+input[type="password"] {
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+
+button {
+
+    padding: 1px 3.35rem;
+    font-weight: bold;
+
+
+}
+
+
+.btn-danger {
+    padding: 1px 1rem;
+    font-weight: bold;
+    margin-left: 3rem
+}
+
+
+
+/* Optional: Adjust button styles for better readability */
+@media only screen and (max-width: 995px) {
+    button {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 0 3.35rem;
+        margin-top: 8px;
+
+    }
+
+
+
+
+    input[type="text"],
+    input[type="password"] {
+        width: 70%;
+    }
+
+
+
+
+
+    .btn-danger {
+        padding: 0 1.35rem;
+
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    input[type="text"],
+    input[type="password"] {
+        padding: 8px;
+        margin-right: 10px;
+        width: 103%;
+    }
+
+    button {
+        font-size: 1.25rem;
+        margin: 10px;
+        padding: 0.25rem 4rem;
+        font-weight: bold;
+
+    }
+
+    .btn-danger {
+        padding: 0.1975rem 1.22rem;
+        margin: 10px 0 8px 10px;
+
+    }
+
+}
+
+
+
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+.form-control {
+    // border: 2px solid rgb(130, 168, 168);
+    border: 2px solid rgb(3, 134, 134);
+
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+button {
+    margin-right: -6px;
+}
+
+/* Adjust button styles for better responsiveness */
+@media only screen and (max-width: 576px) {
+    .button-group {
+        flex-direction: column;
+    }
+
+    button {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+}
+
+// @media only screen and (max-width:575px) {
+//     .button-group {
+//         margin: 20px;
+
+//     }
+// }
+
+
+
+
+
+.formtext {
+    border: 1px solid rgb(80, 5, 5);
+    border-radius: 8px;
+
+}
+
+.danger01 {
+    padding: 0.130rem 29px;
+    margin: 20px;
+
+}
+
+.danger02 {
+    padding: 0.130rem 12px;
+    margin: 20px;
+}
+
+p.alert {
+    background-color: rgb(53, 31, 53);
+    color: white;
+    // background-color: rgb(238, 135, 238);
+    font-weight: bold;
+    font-family: Geneva;
+    font-size: 18px;
+    width: max-content;
+    margin: 0 auto 20px;
+    padding: 4px 10px;
+}
+
+.changeLable {
+    border: 2px solid rgb(129, 107, 107);
+    text-align: center;
+}
+
+p.p01,
+p.p02 {
+    background-color: rgb(17, 29, 17);
+    text-align: center;
+}

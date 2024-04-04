@@ -1,1 +1,51 @@
 <app-product></app-product>
+<!-- <div app-product></div> -->
+<!-- <div class="app-product"></div> -->
+<div class="container">
+    <div class="row">
+      <div class="col-12 mt-4 text-center">
+        <form>
+            <div class="form-group font-weight-bold color">
+              <label for="username">Username:</label>
+              <input type="text" id="username" class="form-control" name="username" [(ngModel)]="username" required>
+            </div>
+            
+            <div class="form-group font-weight-bold">
+              <label for="password">Password:</label>
+              <input type="password" class="form-control" id="password" name="password" [(ngModel)]="password" required>
+            </div>
+            
+            <div class="button-group">
+              <button class="btn btn-primary" [disabled]="!username || !password">Login</button>
+              <!-- [disabled] is property binding -->
+              <button class="btn btn-danger" [disabled]="isDisabled">Create Account</button>
+            </div>
+          </form>
+          <input type="text" class=" formtext form-control mt-4 text-center font-weight-bold"[value]="productName">
+          <button class="btn btn-primary danger01"[disabled]="isdisabled"(click)="updateProduct()">Add Product</button>
+          <!-- here (click) is an event data binding  -->
+          <button class="btn btn-danger danger02"[disabled]="noOfProductsAdded===0"(click)="removeProduct()">Remove Product</button>
+
+          <p class="alert">{{productStatus}}</p>
+          
+          <div class="form-group font-weight-bold">
+            <label for="search">Search Product</label>
+            <input type="text" class="form-control changeLable"(keyup)="onProductSearch($event)">
+            <!-- keyup is event and onProductSearch is callback function --> 
+          </div>  
+          
+          <p class="alert alert-primary p01 mt-3">
+            {{serchedProduct}}
+          </p>
+          <div class="form-group font-weight-bold">
+            <label for="search">Find Your Product</label>
+            <input type="text" class="form-control changeLable"[(ngModel)]="rateProduct">
+            <p class="alert alert-primary p02 mt-3">
+              {{rateProduct}}
+            </p>
+          </div>  
+
+        </div>
+      </div>
+    </div>
+    
